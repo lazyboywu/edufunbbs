@@ -40,7 +40,9 @@
         "flarum/sticky": "^0.1.0",
         "flarum/subscriptions": "^0.1.0",
         "flarum/suspend": "^0.1.0",
-        "flarum/tags": "^0.1.0"
+        "flarum/tags": "^0.1.0",
+        "lazyboywu/oauth2-qq": "*",
+        "lazyboywu/flarum-ext-auth-qq": "^0.1.0"
     },
     "require-dev": {
         "franzl/studio": "0.10.x@dev"
@@ -49,11 +51,22 @@
         "preferred-install": "dist"
     },
     "minimum-stability": "beta",
-    "repositories": {
-        "packagist": {
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/lazyboywu/flarum-ext-auth-qq"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/lazyboywu/oauth2-qq"
+        },
+        {
             "type": "composer",
             "url": "http://packagist.phpcomposer.com"
+        },
+        {
+            "packagist": false
         }
-    }
-    
+    ]
+
 }
